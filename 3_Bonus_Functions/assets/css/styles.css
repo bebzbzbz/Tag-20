@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 6rem;
+    }
+
+    .ballpit {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 6rem;
+
+        div {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(124, 124, 124);
+            cursor: pointer;
+
+            &:first-of-type {
+                background: linear-gradient(225deg, rgba(195,53,255,1) 50%, rgba(107,222,48,1) 50%);
+            }
+            &:nth-of-type(2) {
+                background: linear-gradient(225deg, rgb(218, 204, 19) 50%, rgb(124, 53, 255) 50%);
+            }
+            &:nth-of-type(3) {
+                background: linear-gradient(225deg, rgb(243, 115, 11) 50%, rgb(15, 15, 15) 50%);
+            }
+            &:last-of-type {
+                background: linear-gradient(225deg, rgb(33, 174, 255) 50%, rgb(17, 7, 156) 50%);
+            }
+        }
+    }
+
+    button {
+        background-color: rgba(71, 71, 71, 0.637);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: .5rem 1rem;
+        cursor: pointer;
+    }
+}
